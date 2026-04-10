@@ -1,8 +1,114 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Danh lam</title>
+        <title>Danh lam - Cầu Vàng Đà Nẵng</title>
         <link rel="stylesheet" href="nav.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Lexend', sans-serif;
+                background-color: #f0f4f8; /* Màu xanh nhạt của mây trời */
+                color: #2c3e50;
+            }
+
+            /* Banner ảnh lớn tràn viền */
+            .hero-landmark {
+                position: relative;
+                width: 100%;
+                height: 60vh;
+                overflow: hidden;
+            }
+
+            .hero-landmark img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(80%);
+            }
+
+            .hero-title {
+                position: absolute;
+                bottom: 10%;
+                left: 5%;
+                color: white;
+                text-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+            }
+
+            .hero-title h2 {
+                font-family: 'Playfair Display', serif;
+                font-size: 4em;
+                margin: 0;
+            }
+
+            /* Khung nội dung */
+            .container {
+                max-width: 900px;
+                margin: -50px auto 50px;
+                background: white;
+                position: relative;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            }
+
+            .info-grid {
+                display: flex;
+                gap: 30px;
+                margin-top: 30px;
+            }
+
+            .info-card {
+                flex: 1;
+                background: #fdf6e3; /* Màu vàng kem nhẹ */
+                padding: 20px;
+                border-radius: 8px;
+                border-top: 5px solid #d4af37; /* Màu vàng kim */
+                text-align: center;
+            }
+
+            .info-card strong {
+                display: block;
+                font-size: 1.2em;
+                color: #b8860b;
+                margin-bottom: 5px;
+            }
+
+            .description {
+                line-height: 2;
+                font-size: 1.1em;
+                text-align: justify;
+                border-left: 3px solid #d4af37;
+                padding-left: 20px;
+                margin: 30px 0;
+            }
+
+            .stats {
+                background: #2c3e50;
+                color: white;
+                padding: 15px;
+                border-radius: 50px;
+                display: inline-block;
+                padding: 10px 30px;
+                font-size: 0.9em;
+                margin-bottom: 20px;
+            }
+
+            figcaption {
+                text-align: right;
+                font-style: italic;
+                color: #888;
+                font-size: 0.8em;
+                margin-top: 10px;
+            }
+
+            /* Hiệu ứng mượt mà */
+            .info-card:hover {
+                transform: scale(1.05);
+                transition: 0.3s;
+            }
+        </style>
     </head>
     <body>
         <nav>
@@ -12,12 +118,46 @@
                 <li><a href="lehoi.html">Lễ hội</a></li>
                 <li><a href="danhlam.html">Danh lam</a></li>
                 <li><a href="trangphuc.html">Trang phục</a></li>
+                <li><a href="thanhvien.html">Thành viên</a></li>
             </ul>
         </nav>
-        <h2>Danh lam</h2>
-        <p>Cầu Vàng là một cây cầu nổi tiếng ở Đà Nẵng, nằm trong khu du lịch Bà Nà Hills. Cầu dài khoảng 150m, nằm trên độ cao hơn 1.400m so với mực nước biển.<br>
-        Điểm đặc biệt nhất là hai bàn tay khổng lồ như đang nâng đỡ cây cầu giữa trời.<br>
-        Thiết kế mang cảm giác vừa huyền bí – cổ kính – siêu thực.</p>
-        <img src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.15752-9/476605504_836000268652946_5071058813438979524_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGSje7vE4VkXZdAYPFLW82XVsTuCPajuTlWxO4I9qO5OfE1xbuWEZicYgeoGIugdn445CutVoD2N2MZY1SUpLrD&_nc_ohc=GDWS12xx_uwQ7kNvwFg4pO8&_nc_oc=AdqCqOCSFz4pVf9oHCzA3dUUVqdmodR-H63BtBLCKB5t1IGejYoSVVotEdd8C0Uy_x6wEsOHVhL6-6dwr6hrcdUe&_nc_zt=23&_nc_ht=scontent.fsgn2-6.fna&_nc_ss=7a32e&oh=03_Q7cD4wELZJCNbTlZA6uJxmCRi2R34hXjF8mjNQd-k46gTD1LAA&oe=69E76D8D">
+
+        <div class="hero-landmark">
+            <img src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t1.15752-9/476605504_836000268652946_5071058813438979524_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGSje7vE4VkXZdAYPFLW82XVsTuCPajuTlWxO4I9qO5OfE1xbuWEZicYgeoGIugdn445CutVoD2N2MZY1SUpLrD&_nc_ohc=GDWS12xx_uwQ7kNvwFg4pO8&_nc_oc=AdqCqOCSFz4pVf9oHCzA3dUUVqdmodR-H63BtBLCKB5t1IGejYoSVVotEdd8C0Uy_x6wEsOHVhL6-6dwr6hrcdUe&_nc_zt=23&_nc_ht=scontent.fsgn2-6.fna&_nc_ss=7a32e&oh=03_Q7cD4wELZJCNbTlZA6uJxmCRi2R34hXjF8mjNQd-k46gTD1LAA&oe=69E76D8D" alt="Cầu Vàng">
+            <div class="hero-title">
+                <span class="stats">Đà Nẵng, Việt Nam</span>
+                <h2>Cầu Vàng</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="description">
+                Cầu Vàng là một công trình kiến trúc ngoạn mục nằm tại khu du lịch Bà Nà Hills. 
+                Nằm ở độ cao hơn 1.400m so với mực nước biển, cây cầu như một dải lụa vàng óng ả 
+                vắt ngang bầu trời, được nâng đỡ bởi đôi bàn tay khổng lồ rêu phong đầy huyền bí.
+            </p>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <strong>150m</strong>
+                    <span>Chiều dài ấn tượng</span>
+                </div>
+                <div class="info-card">
+                    <strong>1.400m</strong>
+                    <span>Độ cao so với mặt biển</span>
+                </div>
+                <div class="info-card">
+                    <strong>Bà Nà Hills</strong>
+                    <span>Vị trí tọa lạc</span>
+                </div>
+            </div>
+
+            <p style="margin-top: 30px;">
+                Thiết kế mang cảm giác vừa <b>huyền bí</b> – <b>cổ kính</b> – nhưng cũng vô cùng <b>siêu thực</b>, 
+                tạo nên một không gian check-in không thể bỏ qua đối với du khách trong và ngoài nước.
+            </p>
+            
+            <figcaption>Nguồn ảnh: vietnam.net</figcaption>
+        </div>
     </body>
 </html>

@@ -1,8 +1,116 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Trang phục</title>
+        <title>Trang phục - Áo Dài Việt Nam</title>
         <link rel="stylesheet" href="nav.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:ital,wght@0,400;1,400&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Montserrat', sans-serif;
+                background-color: #fff5f7; /* Màu hồng cực nhạt */
+                color: #4a4a4a;
+            }
+
+            .fashion-container {
+                max-width: 1100px;
+                margin: 50px auto;
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 40px;
+            }
+
+            /* Phần hình ảnh mang phong cách Lookbook */
+            .fashion-gallery {
+                flex: 1;
+                min-width: 350px;
+                position: relative;
+            }
+
+            .fashion-gallery figure {
+                margin: 0;
+                border: 15px solid white; /* Tạo viền ảnh như tấm bưu thiếp */
+                box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+                transform: rotate(-2deg); /* Nghiêng nhẹ cho nghệ thuật */
+                transition: 0.5s;
+            }
+
+            .fashion-gallery figure:hover {
+                transform: rotate(0deg);
+                box-shadow: 0 15px 45px rgba(255, 182, 193, 0.4);
+            }
+
+            .fashion-gallery img {
+                width: 100%;
+                display: block;
+            }
+
+            /* Phần nội dung chữ */
+            .fashion-info {
+                flex: 1.2;
+                min-width: 350px;
+            }
+
+            h2 {
+                font-family: 'Dancing Script', cursive;
+                font-size: 4em;
+                color: #d81b60;
+                margin: 0 0 10px 0;
+            }
+
+            .sub-title {
+                font-family: 'Lora', serif;
+                font-style: italic;
+                font-size: 1.3em;
+                color: #888;
+                margin-bottom: 30px;
+                display: block;
+            }
+
+            .content-box {
+                background: white;
+                padding: 30px;
+                border-radius: 30px 0 30px 0; /* Bo góc đối xứng */
+                line-height: 1.8;
+                box-shadow: 5px 5px 20px rgba(0,0,0,0.02);
+            }
+
+            .detail-list {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .detail-item {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .icon-flower {
+                color: #d81b60;
+                font-size: 1.2em;
+            }
+
+            .highlight-text {
+                background: linear-gradient(to right, #ffc1e3, transparent);
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-weight: 500;
+            }
+
+            figcaption {
+                text-align: center;
+                margin-top: 20px;
+                font-style: italic;
+                font-size: 0.8em;
+                color: #aaa;
+            }
+        </style>
     </head>
     <body>
         <nav>
@@ -12,18 +120,45 @@
                 <li><a href="lehoi.html">Lễ hội</a></li>
                 <li><a href="danhlam.html">Danh lam</a></li>
                 <li><a href="trangphuc.html">Trang phục</a></li>
+                <li><a href="thanhvien.html">Thành viên</a></li>
             </ul>
         </nav>
-        <h2>Trang phục</h2>
-        <p>Áo dài là trang phục truyền thống đặc trưng của Việt Nam, gắn liền với vẻ đẹp thanh lịch và duyên dáng của người Việt.<br>
-        👗 Mô tả:<br>
-        Áo dài là áo dài tay, ôm sát cơ thể, có cổ cao, xẻ tà hai bên từ eo xuống.<br>
-        Mặc cùng quần dài (thường là quần lụa).<br>
-        Chất liệu phổ biến: lụa, voan… tạo cảm giác mềm mại, nhẹ nhàng.<br>
-        🌸 Đặc điểm nổi bật:<br>
-        Tôn dáng nhưng vẫn kín đáo<br>
-        Mang vẻ đẹp truyền thống + hiện đại<br>
-        Màu sắc đa dạng: trắng tinh khôi (học sinh), đỏ – vàng (lễ hội), họa tiết thêu tinh tế</p>
-        <img src="https://scontent.fsgn2-9.fna.fbcdn.net/v/t1.15752-9/645723896_2189687228505138_3291341191729444667_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFvNcyJuQlwzD1d58HDetAIfXOtRwEIMoF9c61HAQgygYK5an0Yaenrfu5m4tEbWRwi4snoFaxbkIoO98K3h0OT&_nc_ohc=V4FTi9ZiP_YQ7kNvwH5I1Tn&_nc_oc=Adr8Ur7wu6rjSHJMQQBr-0DMr-NpYBYKQmlDYnKknE8bcTQM4J8lClwIHopKSK-l1m-KVa7vYureKPoc7itAzZ6X&_nc_zt=23&_nc_ht=scontent.fsgn2-9.fna&_nc_ss=7a32e&oh=03_Q7cD4wE8ro7MKl4f5y8Sa-2bMgm1f9ba9VNJVtp7gyaYilNROQ&oe=69E76993">
+
+        <div class="fashion-container">
+            <div class="fashion-gallery">
+                <figure>
+                    <img src="https://scontent.fsgn2-9.fna.fbcdn.net/v/t1.15752-9/645723896_2189687228505138_3291341191729444667_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFvNcyJuQlwzD1d58HDetAIfXOtRwEIMoF9c61HAQgygYK5an0Yaenrfu5m4tEbWRwi4snoFaxbkIoO98K3h0OT&_nc_ohc=V4FTi9ZiP_YQ7kNvwH5I1Tn&_nc_oc=Adr8Ur7wu6rjSHJMQQBr-0DMr-NpYBYKQmlDYnKknE8bcTQM4J8lClwIHopKSK-l1m-KVa7vYureKPoc7itAzZ6X&_nc_zt=23&_nc_ht=scontent.fsgn2-9.fna&_nc_ss=7a32e&oh=03_Q7cD4wE8ro7MKl4f5y8Sa-2bMgm1f9ba9VNJVtp7gyaYilNROQ&oe=69E76993" alt="Áo dài Việt Nam">
+                </figure>
+                <figcaption>Nguồn: vietnam.net</figcaption>
+            </div>
+
+            <div class="fashion-info">
+                <h2>Áo Dài</h2>
+                <span class="sub-title">Biểu tượng của vẻ đẹp vĩnh cửu</span>
+
+                <div class="content-box">
+                    <p>Áo dài là trang phục truyền thống gắn liền với vẻ đẹp thanh lịch, duyên dáng của người Việt qua bao thế hệ.</p>
+                    
+                    <div class="detail-list">
+                        <div class="detail-item">
+                            <span class="icon-flower">🌸</span>
+                            <span><span class="highlight-text">Kiểu dáng:</span> Ôm sát cơ thể, cổ cao, xẻ tà quyến rũ kết hợp cùng quần lụa mềm mại.</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon-flower">🌸</span>
+                            <span><span class="highlight-text">Chất liệu:</span> Lụa, voan, gấm... tạo cảm giác nhẹ nhàng và bay bổng trong mỗi bước đi.</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon-flower">🌸</span>
+                            <span><span class="highlight-text">Sắc màu:</span> Đa dạng từ trắng học trò đến đỏ thắm ngày hội, thêu hoa văn tinh xảo.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="margin-top: 25px; font-style: italic; color: #d81b60; font-weight: 500;">
+                    "Tôn dáng nhưng vẫn kín đáo - Vẻ đẹp truyền thống hòa quyện cùng hơi thở hiện đại."
+                </p>
+            </div>
+        </div>
     </body>
 </html>

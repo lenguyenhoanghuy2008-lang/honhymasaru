@@ -1,8 +1,110 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Ẩm thực</title>
+        <title>Ẩm thực - Cơm Tấm Sài Gòn</title>
         <link rel="stylesheet" href="nav.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Quicksand', sans-serif;
+                background-color: #fffaf0; /* Màu nền trắng kem ấm áp */
+                color: #2d2d2d;
+            }
+
+            .food-container {
+                max-width: 1000px;
+                margin: 60px auto;
+                display: flex; /* Chia đôi màn hình */
+                align-items: center;
+                gap: 50px;
+                padding: 20px;
+            }
+
+            /* Phần hình ảnh bên trái */
+            .food-image {
+                flex: 1;
+                position: relative;
+            }
+
+            .food-image img {
+                width: 100%;
+                border-radius: 2px;
+                box-shadow: 20px 20px 0px #e67e22; /* Tạo khung viền lệch màu cam */
+                transition: 0.4s;
+            }
+
+            .food-image:hover img {
+                transform: translate(10px, 10px);
+                box-shadow: 0px 0px 0px #e67e22;
+            }
+
+            /* Phần nội dung bên phải */
+            .food-info {
+                flex: 1;
+            }
+
+            h2 {
+                font-family: 'Playfair Display', serif;
+                font-size: 3.5em;
+                color: #e67e22; /* Màu cam của sườn nướng */
+                margin: 0 0 20px 0;
+                border-bottom: 2px solid #e67e22;
+                display: inline-block;
+            }
+
+            .description {
+                font-style: italic;
+                font-size: 1.1em;
+                color: #666;
+                margin-bottom: 25px;
+            }
+
+            .ingredient-list {
+                list-style: none;
+                padding: 0;
+            }
+
+            .ingredient-list li {
+                margin-bottom: 15px;
+                padding-left: 30px;
+                position: relative;
+                line-height: 1.6;
+            }
+
+            .ingredient-list li::before {
+                content: '✦';
+                position: absolute;
+                left: 0;
+                color: #e67e22;
+                font-size: 1.2em;
+            }
+
+            .ingredient-list b {
+                color: #d35400;
+                font-size: 1.1em;
+            }
+
+            .summary-box {
+                margin-top: 30px;
+                padding: 20px;
+                background: #fff;
+                border-left: 5px solid #e67e22;
+                box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+            }
+
+            /* Responsive cho điện thoại */
+            @media (max-width: 768px) {
+                .food-container {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .ingredient-list li {
+                    text-align: left;
+                }
+            }
+        </style>
     </head>
     <body>
         <nav>
@@ -12,19 +114,33 @@
                 <li><a href="lehoi.html">Lễ hội</a></li>
                 <li><a href="danhlam.html">Danh lam</a></li>
                 <li><a href="trangphuc.html">Trang phục</a></li>
+                <li><a href="thanhvien.html">Thành viên</a></li>
             </ul>
         </nav>
-        <h2>Ẩm thực</h2>
-        <p>Cơm tấm là một món ăn đặc trưng của miền Nam Việt Nam, đặc biệt nổi tiếng ở Thành phố Hồ Chí Minh.
-        <br>
-        Mô tả kiểu “chuẩn vị”:
-        <br>
-        🍚 Cơm: làm từ gạo tấm (hạt gạo bị vỡ), khi nấu lên mềm, tơi nhưng hơi khô hơn cơm thường một chút.<br>
-        🥩 Sườn nướng: linh hồn của món ăn – miếng sườn được ướp đậm đà (nước mắm, tỏi, đường, tiêu…) rồi nướng thơm lừng.<br>
-        🍳 Ăn kèm: thường có trứng ốp la, bì (da heo trộn thính), chả trứng hấp.<br>
-        🥒 Đồ chua: dưa leo, cà chua, đồ chua (cà rốt – củ cải) giúp đỡ ngấy.<br>
-        🥣 Nước mắm: pha chua ngọt, rưới lên là “bùng vị” luôn.<br>
-        👉 <i>Tổng thể: cơm tấm là sự kết hợp giữa mặn – ngọt – béo – thơm, ăn rất “cuốn”, nhất là buổi sáng hoặc tối.</i></p>
-        <img src="https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.15752-9/610759210_1202114548736495_4361412678423956113_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG2vtBt6jTTOGW4SRyG540zbkLq1YrCyIZuQurVisLIhjmaosA2B7KMfBGbDjSgnsjs-m7eIez-xEdoT1esG1oF&_nc_ohc=73AK3PEBrZMQ7kNvwFBSP87&_nc_oc=AdprsmcmYJZkALoKKb7fH_bhifLFuAf7x0R-OAwDzw1a7uKgBkCtJQooOok-GXXNH74IpgZVdLVfFwtaIBrag9rD&_nc_zt=23&_nc_ht=scontent.fsgn2-7.fna&_nc_ss=7a32e&oh=03_Q7cD4wFSQcCqbVVNajmAWGjGVkdL22e3i2lwVt38bSC8L5am4w&oe=69E76D26">
+
+        <div class="food-container">
+            <div class="food-image">
+                <figure>
+                    <img src="https://scontent.fsgn2-7.fna.fbcdn.net/v/t1.15752-9/610759210_1202114548736495_4361412678423956113_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeG2vtBt6jTTOGW4SRyG540zbkLq1YrCyIZuQurVisLIhjmaosA2B7KMfBGbDjSgnsjs-m7eIez-xEdoT1esG1oF&_nc_ohc=73AK3PEBrZMQ7kNvwFBSP87&_nc_oc=AdprsmcmYJZkALoKKb7fH_bhifLFuAf7x0R-OAwDzw1a7uKgBkCtJQooOok-GXXNH74IpgZVdLVfFwtaIBrag9rD&_nc_zt=23&_nc_ht=scontent.fsgn2-7.fna&_nc_ss=7a32e&oh=03_Q7cD4wFSQcCqbVVNajmAWGjGVkdL22e3i2lwVt38bSC8L5am4w&oe=69E76D26" alt="Cơm tấm Sài Gòn">
+                    <figcaption style="margin-top: 15px;">Nguồn: vietnam.net</figcaption>
+                </figure>
+            </div>
+
+            <div class="food-info">
+                <h2>Cơm Tấm</h2>
+                <p class="description">Món ăn "linh hồn" của đường phố Sài Gòn, sự kết hợp tinh tế giữa những hạt gạo tấm bình dị và hương vị sườn nướng đậm đà.</p>
+                
+                <ul class="ingredient-list">
+                    <li><b>Gạo tấm:</b> Hạt gạo vỡ đặc trưng, khi nấu chín tỏa mùi thơm nhẹ, tơi xốp nhưng không nát.</li>
+                    <li><b>Sườn nướng:</b> Ướp theo công thức bí truyền với mật ong, ngũ vị hương, nướng trên than hồng.</li>
+                    <li><b>Đồ kèm:</b> Sự hòa quyện của Chả trứng béo ngậy, Bì heo dai giòn và Trứng ốp la lòng đào.</li>
+                    <li><b>Nước mắm chua ngọt:</b> "Chìa khóa" kết nối mọi hương vị, thêm chút mỡ hành thơm nức.</li>
+                </ul>
+
+                <div class="summary-box">
+                    <p>👉 <b>Tổng thể:</b> Cơm tấm là bản giao hưởng giữa mặn – ngọt – béo – thơm, ăn rất “cuốn”, nhất là vào những buổi sáng vội vã.</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

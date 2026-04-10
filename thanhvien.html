@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Team 12C6 - Vietnam Culture</title>
+        <link rel="stylesheet" href="nav.css">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Space Grotesk', sans-serif;
+                background: #0f172a; /* Màu nền tối sang trọng */
+                color: #f8fafc;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 80px auto;
+                padding: 0 20px;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 3em;
+                margin-bottom: 10px;
+                background: linear-gradient(to right, #60a5fa, #c084fc);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .sub-title {
+                color: #94a3b8;
+                font-size: 1.2em;
+                margin-bottom: 50px;
+            }
+
+            .team-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 40px;
+            }
+
+            .member-card {
+                background: #1e293b;
+                border: 1px solid #334155;
+                border-radius: 24px;
+                padding: 30px;
+                width: 240px;
+                position: relative;
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                overflow: hidden;
+            }
+
+            /* Hiệu ứng phát sáng khi hover */
+            .member-card:hover {
+                transform: translateY(-15px);
+                border-color: #60a5fa;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            }
+
+            /* Trang trí hình tròn phía sau ảnh */
+            .member-card::before {
+                content: '';
+                position: absolute;
+                top: -50px;
+                right: -50px;
+                width: 120px;
+                height: 120px;
+                background: rgba(96, 165, 250, 0.1);
+                border-radius: 50%;
+                z-index: 0;
+            }
+
+            .member-card img {
+                width: 120px;
+                height: 120px;
+                border-radius: 20px; /* Bo góc nhẹ thay vì tròn xoe */
+                object-fit: cover;
+                position: relative;
+                z-index: 1;
+                border: 2px solid #334155;
+                margin-bottom: 20px;
+                transition: 0.3s;
+            }
+
+            .member-card:hover img {
+                border-color: #60a5fa;
+                transform: scale(1.05);
+            }
+
+            .member-card h3 {
+                margin: 15px 0 8px 0;
+                font-size: 1.4em;
+                color: #f1f5f9;
+            }
+
+            .role {
+                display: inline-block;
+                padding: 4px 12px;
+                background: rgba(96, 165, 250, 0.1);
+                color: #60a5fa;
+                border-radius: 20px;
+                font-size: 0.85em;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 15px;
+            }
+
+            /* Màu riêng cho nhóm trưởng */
+            .leader {
+                background: rgba(192, 132, 252, 0.2);
+                color: #c084fc;
+            }
+
+            .task {
+                color: #94a3b8;
+                font-size: 0.95em;
+                line-height: 1.5;
+            }
+
+            /* Responsive */
+            @media (max-width: 600px) {
+                .member-card {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="amthuc.html">Ẩm thực</a></li>
+                <li><a href="lehoi.html">Lễ hội</a></li>
+                <li><a href="danhlam.html">Danh lam</a></li>
+                <li><a href="trangphuc.html">Trang phục</a></li>
+                <li><a href="thanhvien.html">Thành viên</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h2>Thành viên nhóm 4</h2>
+            <p class="sub-title">Dự án Văn hóa Việt Nam | Lớp 12C6</p>
+
+            <div class="team-grid">
+                <div class="member-card">
+                    <img src="https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/669502720_928531296649273_461675240252138311_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeFnaqUZmZSvxkhpuy7Lvt2VHkzE0i_QQU8eTMTSL9BBT0dSKJGONEN90fnAJV4S3lUz5hOBRQHPxCm-88jZtL6B&_nc_ohc=r4JAEiEZKJIQ7kNvwGaYdPd&_nc_oc=Adrsxbqvx80-aMDI-zsr4NA7SzjD-AgVSIu_2sIONsMQmftDkkJ7Q_TEfw2pY9JMJmnkWpCMPZdV54q3Jqxe9WdQ&_nc_zt=23&_nc_ht=scontent.fsgn2-9.fna&_nc_gid=mESXreq1cn7vjZRqFYjHxA&_nc_ss=7a3a8&oh=00_Af2TuveUCjYVSDAvyz2DgbZUtl5QlC_mP_7k67cWVS5vnA&oe=69DED480" alt="Huy Leader">
+                    <p class="role leader">Nhóm trưởng</p>
+                    <h3>Lê Nguyễn Hoàng Huy</h3>
+                    <p class="task">Chịu trách nhiệm thiết kế nội dung & Ý tưởng chính</p>
+                </div>
+
+                <div class="member-card">
+                    <img src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/635235810_1218050693773138_7036446128856203462_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeElTQFM7ic4-_xcAtmMSne4J_jxhrf_-Lon-PGGt__4uvswGrHB1n9eIIImyXgsmxK9hg6Iug-t-O0fSISAnLyH&_nc_ohc=4Ov0InukLcQQ7kNvwHXy3J2&_nc_oc=Adqtw9ckRNv3bbzl55Vw68Sn8RtodLgV5U6LgkXcSVRq0XpDG7ILDcMFpYBuwkJFgunXsrYDrzsflzwKzUctbDNm&_nc_zt=23&_nc_ht=scontent.fsgn2-5.fna&_nc_gid=-ph5o3zbADuOi5BKviiYBA&_nc_ss=7a3a8&oh=00_Af2IngtGJTMYP9MlyFzvPIFr9_OUKiH2kRfpvk0n_k3Chg&oe=69DEC97E" alt="Gia Huy">
+                    <p class="role">Thành viên</p>
+                    <h3>Hà Gia Huy</h3>
+                    <p class="task">Lập trình cấu trúc HTML & Tối ưu hóa CSS</p>
+                </div>
+
+                <div class="member-card">
+                    <img src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/651695704_938638455307214_967833801148891002_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeGvTb8YeXJt7UYadInRj1DaT-dQhY8KSxdP51CFjwpLF26AsNGTM38JxZ1TI5pdwMwnm1Bru9uRsuum3Ef7cChw&_nc_ohc=4OXkdB3aBFYQ7kNvwHmm5jI&_nc_oc=AdrlY8gw0-x2ze9Um0XDuztOxTalRtdwC9M5GDMvYkYKaKIZ7wHKVW1XNQrE0vokZCTtnTg9ZIzb1Gaeq1MZtguv&_nc_zt=23&_nc_ht=scontent.fsgn2-6.fna&_nc_gid=OwyZKOQ8P81xZ5CMWezg_Q&_nc_ss=7a3a8&oh=00_Af2X9TLEcTzlVR8oswUsXqsyLM-2a4xfDq-IEFz3jZInsg&oe=69DED610" alt="Hiếu">
+                    <p class="role">Thành viên</p>
+                    <h3>Lê Trung Hiếu</h3>
+                    <p class="task">Kiểm tra lỗi hiển thị & Biên tập văn bản</p>
+                </div>
+
+                <div class="member-card">
+                    <img src="https://scontent.fsgn2-9.fna.fbcdn.net/v/t39.30808-6/628230808_935419315822534_1921954805575940234_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeFcUJ9u0PM6jlaXOdHGFmDoQTzn3GtmFoZBPOfca2YWhhr9kjXBzZkQUHvxTnkF3sBBArYykJ9xeJUakZBsngsK&_nc_ohc=bYFfOMQEHvcQ7kNvwFntdcS&_nc_oc=Adr4onn5l9MRoz--xBlGjimDB921hm6Xj9KxWXP1yVq97IBQkBL3rpEoklD9JiLLl_45YkoXFHLfjbzJ3xryJFJK&_nc_zt=23&_nc_ht=scontent.fsgn2-9.fna&_nc_gid=BwuFRR7sydbsFwGptVzvjw&_nc_ss=7a3a8&oh=00_Af1WBPXVyAbx9mRfBT4cp5hlT0lHBiCP51rj7HWiz8Fkgg&oe=69DED4DD" alt="Gia Huy">
+                    <p class="role">Thành viên</p>
+                    <h3>Nguyễn Gia Huy</h3>
+                    <p class="task">Sưu tầm tài liệu ảnh & Đồ họa trang web</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
